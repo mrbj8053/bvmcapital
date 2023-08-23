@@ -84,7 +84,7 @@ class RegisterController extends Controller
         $count=User::where('own_id',$rand)->count();
         while($count>0)
         {
-            $rand="BM".rand(1000000,9999999);
+            $rand="BVM".rand(1000000,9999999);
             $count=User::where('own_id',$rand)->count();
         }
 
